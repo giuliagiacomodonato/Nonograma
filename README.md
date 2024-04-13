@@ -1,6 +1,6 @@
-# Tic tac toe en React + Prolog
+# Nonograma en React + Prolog
 
-Implementación de un tic-tac-toe interactivo, usando React del lado del cliente, y Prolog del lado del servidor.
+Implementación de un nonograma interactivo, usando React del lado del cliente, y Prolog del lado del servidor.
 
 ## Para correr el proyecto
 
@@ -22,7 +22,7 @@ Implementación de un tic-tac-toe interactivo, usando React del lado del cliente
 
 - Ir a http://localhost:3030/admin/server.html para ver la consola web admin.
 
-- La carpeta `pengines-master/apps/proylcc` contiene el código prolog del tic tac toe. Cada vez que se modifica este código es necesario bajar y volver a levantar el servidor para que se reflejen los cambios.
+- La carpeta `pengines-master/apps/proylcc` contiene el código prolog del nonograma. Cada vez que se modifica este código es necesario bajar y volver a levantar el servidor para que se reflejen los cambios.
 
 ### Setup y ejecución de la aplicación React
 
@@ -32,7 +32,7 @@ Implementación de un tic-tac-toe interactivo, usando React del lado del cliente
 
   `npm install` 
 
-  en el directorio del proyecto (`tic-tac-toe`) para instalar las dependencias (librerías)
+  en el directorio del proyecto (`Nonograma`) para instalar las dependencias (librerías)
 localmente, en la carpeta `node_modules`.
 
 - Ejecutar
