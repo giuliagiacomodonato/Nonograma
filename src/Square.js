@@ -1,8 +1,9 @@
 import React from 'react';
 
 function Square({ value, onClick }) {
+    let  pintar = value === "#" ? "square filledSquare" : "square";
     return (
-        <button className="square" onClick={onClick}>
+        <button className={"square"+pintar} onClick={onClick}>
             {value !== '_' ? value : null}
         </button>
     );

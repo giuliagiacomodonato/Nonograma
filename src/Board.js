@@ -2,7 +2,8 @@ import React from 'react';
 import Square from './Square';
 import Clue from './Clue';
 
-function Board({ grid, rowsClues, colsClues, onClick }) {
+function Board({ grid, rowsClues, colsClues, rowSatisfactions, colSatisfactions, onClick }) {
+
     const numOfRows = grid.length;
     const numOfCols = grid[0].length;
     return (
@@ -10,12 +11,12 @@ function Board({ grid, rowsClues, colsClues, onClick }) {
             <div
                 className="colClues"
                 style={{
-                    gridTemplateRows: '60px',
+                    gridTemplateRows: '110px',
                     gridTemplateColumns: `60px repeat(${numOfCols}, 40px)`
                     /*
                        60px  40px 40px 40px 40px 40px 40px 40px   (gridTemplateColumns)
                       ______ ____ ____ ____ ____ ____ ____ ____
-                     |      |    |    |    |    |    |    |    |  60px
+                     |      |    |    |    |    |    |    |    |  80px
                      |      |    |    |    |    |    |    |    |  (gridTemplateRows)
                       ------ ---- ---- ---- ---- ---- ---- ---- 
                      */
@@ -23,8 +24,8 @@ function Board({ grid, rowsClues, colsClues, onClick }) {
             >
                 <div>{/* top-left corner square */}</div>
                 {colsClues.map((clue, i) =>
-                    <Clue clue={clue} key={i} />
-                )}
+        <Clue clue={clue} sat={colSatisfactions[i]} key={i} />
+        )}
             </div>
             <div className="horizontal">
                 <div
@@ -35,9 +36,9 @@ function Board({ grid, rowsClues, colsClues, onClick }) {
                         /* IDEM column clues above */
                     }}
                 >
-                    {rowsClues.map((clue, i) =>
-                        <Clue clue={clue} key={i} />
-                    )}
+                   {rowsClues.map((clue, i) =>
+    <Clue clue={clue} sat={rowSatisfactions[i]} key={i} />
+)}
                 </div>
                 <div className="board"
                     style={{
