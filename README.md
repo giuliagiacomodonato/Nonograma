@@ -36,10 +36,7 @@ Implementación de un tic-tac-toe interactivo, usando React del lado del cliente
 localmente, en la carpeta `node_modules`.
 
 - Ejecutar
-----------------------------------------------------------------------------------------------------------
-Giulia Giacomodonato
-Tomás Kreczmer 
-LCC 2024, UNS.
+
     `npm start`
 
     en el directorio del proyecto para correr la app en modo desarrollo.
@@ -47,3 +44,7 @@ LCC 2024, UNS.
 - Abrir [http://localhost:3000](http://localhost:3000) para ver la aplicación en el browser.
 
 - La página se refresca automáticamente cuando cambia el código.
+  ----------------------------------------------------------------------------------------------------------
+Giulia Giacomodonato
+Tomás Kreczmer 
+LCC 2024, UNS.
